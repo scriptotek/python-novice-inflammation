@@ -320,35 +320,6 @@ so we should always use it when we can.
 {: .challenge}
 
 
-
-> ## Computing Powers With Loops
->
-> Exponentiation is built into Python:
->
-> ~~~
-> print(5 ** 3)
-> ~~~
-> {: .language-python}
->
-> ~~~
-> 125
-> ~~~
-> {: .output}
->
-> Write a loop that calculates the same result as `5 ** 3` using
-> multiplication (and without exponentiation).
->
-> > ## Solution
-> > ~~~
-> > result = 1
-> > for number in range(0, 3):
-> >     result = result * 5
-> > print(result)
-> > ~~~
-> > {: .language-python}
-> {: .solution}
-{: .challenge}
-
 > ## Reverse a String
 >
 > Knowing that two strings can be concatenated using the `+` operator,
