@@ -21,17 +21,6 @@ Detailed installation instructions for various operating systems can be found
 on The Carpentries [template website for workshops][anaconda-instructions]
 and in [Anaconda documentation][anaconda-install].
 
-## Obtain lesson materials
-
-1. Download [python-novice-inflammation-data.zip][zipfile1]
-        and [python-novice-inflammation-code.zip][zipfile2].
-2. Create a folder called `swc-python` on your Desktop.
-3. Move downloaded files to `swc-python`.
-4. Unzip the files.
-
-You should see two folders called `data` and `code` in the `swc-python` directory on your
-Desktop.
-
 ## Launch Python interface
 
 To start working with Python, we need to launch a program that will interpret and execute our Python
@@ -61,30 +50,6 @@ If you installed Anaconda, you can launch a notebook in two ways:
 {: .solution}
 
 > ## Command line (Terminal)
->
-> 1\. Navigate to the `data` directoty:
->
-> > ## Unix shell
-> > If you're using a Unix shell application, such as Terminal app in macOS, Console or Terminal
-> > in Linux, or [Git Bash][gitbash] on Windows, execute the following command:
-> > ~~~
-> > cd ~/Desktop/swc-python/data
-> > ~~~
-> > {: .language-bash}
-> {: .solution}
->
-> > ## Command Prompt (Windows)
-> > On Windows, you can use its native Command Prompt program.  The easiest way to start it up is
-> > pressing <kbd>Windows Logo Key</kbd>+<kbd>R</kbd>, entering `cmd`, and hitting
-> > <kbd>Return</kbd>. In the Command Prompt, use the following command to navigate to
-> > the `data` folder:
-> > ~~~
-> > cd /D %userprofile%\Desktop\swc-python\data
-> > ~~~
-> > {: .source}
-> {: .solution}
->
-> 2\. Start Jupyter server
 >
 > > ## Unix shell
 > > ~~~

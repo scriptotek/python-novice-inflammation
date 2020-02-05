@@ -19,6 +19,8 @@ keypoints:
 - "`True` and `False` represent truth values."
 ---
 
+{% include modified.md %}
+
 In our last lesson, we discovered something suspicious was going on
 in our inflammation data by drawing some plots.
 How can we use Python to automatically recognize the different features we saw,
