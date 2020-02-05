@@ -15,6 +15,8 @@ keypoints:
 - "Use `len(thing)` to determine the length of something that contains other values."
 ---
 
+{% include ../modified.md %}
+
 In the last episode, we wrote Python code that plots values of interest from our first
 inflammation dataset (`inflammation-01.csv`), which revealed some suspicious features in it.
 
