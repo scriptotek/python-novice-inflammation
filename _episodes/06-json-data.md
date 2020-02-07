@@ -1,5 +1,5 @@
 ---
-title: Working with JSON data from an external data source
+title: Working with JSON data
 teaching: 30
 exercises: 15
 questions:
@@ -10,11 +10,15 @@ objectives:
 - "Use loops and conditions to filter data"
 keypoints:
 - "The `requests` library can be used to fetch data from the web."
-- "JSON is well supported in Python. JSON data is decoded into a strcuture called dict."
-- "Pieces of data can be extracted using for loops and conditions."
+- "Many data providers provide an API from which we can fetch data programatically."
+- "Parameters can be used to control what data we get from an API."
+- "Most APIs provide data in the JSON format, and JSON is well supported in Python."
+- "Additional filtering and processing of the retrieved data can be done using loops and conditions."
 
 ---
 
-[Lesson](https://github.com/scriptotek/programming-for-lawyers/blob/master/caselaw.ipynb)
+In this lesson, we will look at how we can work with data using some real-world JSON data from Harvard’s Caselaw Access Project ("CAP").
 
-[Solutions](https://github.com/scriptotek/programming-for-lawyers/blob/master/caselaw_solutions.ipynb)
+* [**Lesson material**](https://github.com/scriptotek/programming-for-lawyers/blob/master/caselaw.ipynb) (Jupyter Notebook)
+
+* [Solutions](https://github.com/scriptotek/programming-for-lawyers/blob/master/caselaw_solutions.ipynb) (Jupyter Notebook)
