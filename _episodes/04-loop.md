@@ -17,13 +17,7 @@ keypoints:
 
 {% include modified.md %}
 
-In the last episode, we wrote Python code that plots values of interest from our first
-inflammation dataset (`inflammation-01.csv`), which revealed some suspicious features in it.
-
-![Analysis of inflammation-01.csv](../fig/03-loop_2_0.png)
-
-We have a dozen data sets right now, though, and more on the way.
-We want to create plots for all of our data sets with a single statement.
+We want to do operations on items in our data sets.
 To do that, we'll have to teach the computer how to repeat things.
 
 An example task that we might want to repeat is printing each character in a
