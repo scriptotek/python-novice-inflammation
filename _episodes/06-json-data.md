@@ -15,6 +15,6 @@ keypoints:
 
 ---
 
-Lesson: https://github.com/scriptotek/programming-for-lawyers/blob/master/caselaw.ipynb
+[Lesson](https://github.com/scriptotek/programming-for-lawyers/blob/master/caselaw.ipynb)
 
-Solutions: https://github.com/scriptotek/programming-for-lawyers/blob/master/caselaw_solutions.ipynb
+[Solutions](https://github.com/scriptotek/programming-for-lawyers/blob/master/caselaw_solutions.ipynb)
