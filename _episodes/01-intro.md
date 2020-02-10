@@ -201,22 +201,26 @@ weight in kilograms is now: 65.0
 > {: .solution}
 {: .challenge}
 
-> ## Sorting Out References
+> ## Using variables
 >
-> What does the following program print out?
->
-> ~~~
-> first, second = 'Grace', 'Hopper'
-> third, fourth = second, first
-> print(third, fourth)
-> ~~~
-> {: .language-python}
+> Alice weighs 65 kg, and Bob weighs 70 kg.
+> 1. Create variables containing these data. Try to think of descriptive variable names.
+> 2. Create a new variable containing their total weight, calculated from the two variables from 1.
+> 3. Charlie weighs 85 kg. Calculate Alice, Bob and Charlie's average weight.
 >
 > > ## Solution
 > > ~~~
-> > Hopper Grace
+> alice_weight = 65
+> bob_weight = 70
+>
+> total_weight = alice_weight + bob_weight
+> print(total_weight)
+>
+> charlie_weight = 85
+> average_weight = (alice_weight + bob_weight + charlie_weight) / 3
+> print(average_weight)
 > > ~~~
-> > {: .output}
+> > {: .language-python}
 > {: .solution}
 {: .challenge}
 
