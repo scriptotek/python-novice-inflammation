@@ -210,15 +210,15 @@ weight in kilograms is now: 65.0
 >
 > > ## Solution
 > > ~~~
-> alice_weight = 65
-> bob_weight = 70
->
-> total_weight = alice_weight + bob_weight
-> print(total_weight)
->
-> charlie_weight = 85
-> average_weight = (alice_weight + bob_weight + charlie_weight) / 3
-> print(average_weight)
+> > alice_weight = 65
+> > bob_weight = 70
+> >
+> > total_weight = alice_weight + bob_weight
+> > print(total_weight)
+> >
+> > charlie_weight = 85
+> > average_weight = (alice_weight + bob_weight + charlie_weight) / 3
+> > print(average_weight)
 > > ~~~
 > > {: .language-python}
 > {: .solution}
