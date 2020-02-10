@@ -13,9 +13,11 @@ In this course, you will get started on doing empirical research on case law.
 
 > ## Prerequisites
 >
-> You need to understand the concepts of **files** and **directories** and how to start a Python
-> interpreter before tackling this lesson. This lesson uses Jupyter
-> Notebook.
+> You need to understand the concepts of **files** and **directories**
+> before tackling this lesson.
+> This lesson uses [Jupyter Notebook](https://jupyter-notebook.readthedocs.io/en/stable/examples/Notebook/Notebook%20Basics.html)
+> at the University of Oslo 
+> [JupyterHub](https://jupyterhub.uio.no/).
 >
 > The commands in this lesson pertain to **Python 3**.
 {: .prereq}
