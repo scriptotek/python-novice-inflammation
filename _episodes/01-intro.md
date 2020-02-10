@@ -15,6 +15,8 @@ keypoints:
 - "Use `print(something)` to display the value of `something`."
 ---
 
+{% include modified.md %}
+
 ## Variables
 
 Any Python interpreter can be used as a calculator:
