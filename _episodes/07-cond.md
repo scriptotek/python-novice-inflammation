@@ -134,6 +134,55 @@ at least one test is true
 {: .callout}
 
 
+> ## Count dissenting opinions
+>
+> Complete the code below to count the number of dissenting opinions in the query results.
+>
+> ~~~
+> import requests
+> import json
+> 
+> URL = "https://api.case.law/v1/cases/?jurisdiction=ill&full_case=true&decision_date_min=2009-01-01&page_size=20"
+> data = requests.get(URL).json()
+> 
+> # Your code here:
+> 
+> cases = data["results"]
+> for case in cases:
+>     opinions = case["casebody"]["data"]["opinions"]
+>     for opinion in opinions:
+>         # Your code here:
+> 
+> print("Number of dissents:", dissents)
+> 
+> ~~~
+> {: .language-python}
+>
+> > ## Solution
+> > ~~~
+> > import requests
+> > import json
+> > 
+> > URL = "https://api.case.law/v1/cases/?jurisdiction=ill&full_case=true&decision_date_min=2009-01-01&page_size=20"
+> > data = requests.get(URL).json()
+> > 
+> > # Your code here:
+> > dissents = 0
+> > 
+> > cases = data["results"]
+> > for case in cases:
+> >     opinions = case["casebody"]["data"]["opinions"]
+> >     for opinion in opinions:
+> >         # Your code here:
+> >         if (opinion["type"] == "dissent"):
+> >             dissents = dissents + 1
+> > 
+> > print("Number of dissents:", dissents)
+> > ~~~
+> > {: .language-python}
+> {: .solution}
+{: .challenge}
+
 > ## How Many Paths?
 >
 > Consider this code:
