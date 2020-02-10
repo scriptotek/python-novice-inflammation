@@ -21,9 +21,7 @@ keypoints:
 
 {% include modified.md %}
 
-In our last lesson, we discovered something suspicious was going on
-in our inflammation data by drawing some plots.
-How can we use Python to automatically recognize the different features we saw,
+How can we use Python to automatically recognize the different features in our data,
 and take a different action for each? In this lesson, we'll learn how to write code that
 runs only when certain conditions are true.
 
