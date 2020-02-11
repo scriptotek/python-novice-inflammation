@@ -145,8 +145,6 @@ at least one test is true
 > URL = "https://api.case.law/v1/cases/?jurisdiction=ill&full_case=true&decision_date_min=2009-01-01&page_size=20"
 > data = requests.get(URL).json()
 > 
-> # Your code here:
-> 
 > cases = data["results"]
 > for case in cases:
 >     opinions = case["casebody"]["data"]["opinions"]
