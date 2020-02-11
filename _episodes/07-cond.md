@@ -153,7 +153,8 @@ at least one test is true
 > ~~~
 > {: .language-python}
 >
-> Now, try to modify the code to count the number of dissenting opinions by using an `if` test with `opinion["type"]`:
+> Now, try to modify the code to count the number of dissenting opinions by using an `if` test with `opinion["type"]`.
+> If you find a dissent, you will need to increase the variable `dissent_count`:
 >
 > ~~~
 > import requests
@@ -162,7 +163,7 @@ at least one test is true
 > URL = "https://api.case.law/v1/cases/?jurisdiction=ill&full_case=true&decision_date_min=2009-01-01&page_size=20"
 > data = requests.get(URL).json()
 > 
-> dissents = 0
+> dissent_count = 0
 > 
 > cases = data["results"]
 > for case in cases:
@@ -170,7 +171,7 @@ at least one test is true
 >     for opinion in opinions:
 >         # Your code here:
 > 
-> print("Number of dissents:", dissents)
+> print("Number of dissents:", dissent_count)
 > ~~~
 > {: .language-python}
 >
@@ -182,7 +183,7 @@ at least one test is true
 > > URL = "https://api.case.law/v1/cases/?jurisdiction=ill&full_case=true&decision_date_min=2009-01-01&page_size=20"
 > > data = requests.get(URL).json()
 > > 
-> > dissents = 0
+> > dissent_count = 0
 > > 
 > > cases = data["results"]
 > > for case in cases:
@@ -190,9 +191,9 @@ at least one test is true
 > >     for opinion in opinions:
 > >         # Your code here:
 > >         if opinion["type"] == "dissent":
-> >             dissents = dissents + 1
+> >             dissent_count = dissent_count + 1
 > > 
-> > print("Number of dissents:", dissents)
+> > print("Number of dissents:", dissent_count)
 > > ~~~
 > > {: .language-python}
 > {: .solution}
