@@ -136,7 +136,7 @@ at least one test is true
 
 > ## Count dissenting opinions
 >
-> Complete the code below to count the number of dissenting opinions in the query results.
+> In the code below, we will loop through a list of cases from the Case Law Api, then loop through the opinions for each of those cases. Each `opinion` has a "type" field which describes if it's a majority opinion, dissenting opinion or concurring opinion. First, check if you can print out all the values for this field:
 >
 > ~~~
 > import requests
@@ -151,10 +151,28 @@ at least one test is true
 > for case in cases:
 >     opinions = case["casebody"]["data"]["opinions"]
 >     for opinion in opinions:
+>         print(opinion["type"])
+> ~~~
+> {: .language-python}
+>
+> Try to modify the code to count the number of dissenting opinions by using an `if` test with `opinion["type"]`:
+>
+> ~~~
+> import requests
+> import json
+> 
+> URL = "https://api.case.law/v1/cases/?jurisdiction=ill&full_case=true&decision_date_min=2009-01-01&page_size=20"
+> data = requests.get(URL).json()
+> 
+> dissents = 0
+> 
+> cases = data["results"]
+> for case in cases:
+>     opinions = case["casebody"]["data"]["opinions"]
+>     for opinion in opinions:
 >         # Your code here:
 > 
 > print("Number of dissents:", dissents)
-> 
 > ~~~
 > {: .language-python}
 >
@@ -166,7 +184,6 @@ at least one test is true
 > > URL = "https://api.case.law/v1/cases/?jurisdiction=ill&full_case=true&decision_date_min=2009-01-01&page_size=20"
 > > data = requests.get(URL).json()
 > > 
-> > # Your code here:
 > > dissents = 0
 > > 
 > > cases = data["results"]
@@ -174,7 +191,7 @@ at least one test is true
 > >     opinions = case["casebody"]["data"]["opinions"]
 > >     for opinion in opinions:
 > >         # Your code here:
-> >         if (opinion["type"] == "dissent"):
+> >         if opinion["type"] == "dissent":
 > >             dissents = dissents + 1
 > > 
 > > print("Number of dissents:", dissents)
