@@ -21,7 +21,3 @@ In this course, you will get started on doing empirical research on case law.
 >
 > The commands in this lesson pertain to **Python 3**.
 {: .prereq}
-
-### Getting Started
-To get started, follow the directions on the "[Setup](setup/)" page to download data
-and install a Python interpreter.
