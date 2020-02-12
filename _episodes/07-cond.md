@@ -136,7 +136,10 @@ at least one test is true
 
 > ## Count dissenting opinions
 >
-> In the code below, we loop through a list of cases from the Case Law Api, then loop through the opinions for each of those cases. Each `opinion` has a "type" field which describes if it's a majority opinion, dissenting opinion or concurring opinion. First, try to run the code below to check if you can print out the value of this field for each opinion:
+> In the code below, we loop through a list of cases from the Case Law Api, then
+> loop through the opinions for each of those cases. Each `opinion` has a `"type"`
+> field which describes if it's a majority opinion, dissenting opinion or concurring opinion. 
+> First, try to run the code below to check if you can print out the value of this field for each opinion:
 >
 > ~~~
 > import requests
@@ -153,7 +156,7 @@ at least one test is true
 > ~~~
 > {: .language-python}
 >
-> Now, try to modify the code to count the number of dissenting opinions by using an `if` test with `opinion["type"]`.
+> Now, try to modify the code below to count the number of dissenting opinions by using an `if` test with `opinion["type"]`.
 > If you find a dissent, you will need to increase the variable `dissent_count`:
 >
 > ~~~
