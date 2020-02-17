@@ -20,6 +20,8 @@ list[2:9]), in the same way as strings and arrays."
 - "Strings are immutable (i.e., the characters in them cannot be changed)."
 ---
 
+{% include modified.md %}
+
 Similar to a string that can contain many characters, a list is a container that can store many values.
 We create a list by putting values inside square brackets and separating the values with commas:
 
